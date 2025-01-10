@@ -139,9 +139,37 @@
 // }
 // console.log(caunter )
 // 12
-let son = 9
-for(let i =1; i<=10; i++){
-    let result = son*i+1
-    console.log(result)
+// let son = 9
+// for(let i =1; i<=10; i++){
+//     let result = son*i+1
+//     console.log(result)
+// }
+// 13
+// let numbers = [1,2,3,4,5]
+// let newNumber= []
+// function reverseFunc (num){
+// num.forEach ((item) =>{
+//     newNumber.push(item*-1)
+// })
+// }
+// reverseFunc (numbers)
+// console.log(newNumber)
+
+// 14
+let result = []
+let fizzBuzzFunc = function (number){
+for(let i = 1; i<number; i++){
+    if(i%3==0 && i %5==0){
+        result.push('FizzBuzz')
+    } else if(i % 5 ==0){
+        result.push('Buzz')  
+    } else if (i % 3 == 0){
+        result.push('Fizz')  
+    } else {
+        result.push(i)
+    }
 }
+}
+fizzBuzzFunc(25)
+console.log(result)
 
